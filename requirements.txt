@@ -1,0 +1,7 @@
+# Build-time dependencies only.
+# The application itself runs on the Python standard library + Tkinter.
+# mutagen is optional at runtime (improves metadata import) and is
+# collected by PyInstaller when present.
+
+pyinstaller==6.10.0
+mutagen>=1.47.0
