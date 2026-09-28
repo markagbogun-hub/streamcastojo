@@ -583,7 +583,7 @@ class AutomationEngine:
             self._music_index += 1
             profile = track_profile(path)
             meta = []
-            if profile.get("genre"): meta.append(f"genre {profile["genre"]}")
+            if profile.get("genre"): meta.append(f"genre {profile['genre']}")
             if profile.get("year"): meta.append(f"year {profile["year"]}")
             if profile.get("bpm"): meta.append(f"BPM {profile["bpm"]:.0f}")
             reason = f"Category {cat.title()} • {daypart} clock • artist sep {rules.artist_separation} • title sep {rules.title_separation}" + (" • " + " • ".join(meta) if meta else "")
